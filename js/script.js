@@ -45,6 +45,12 @@ function CheckPalindroma(word) {
 }
 
 
+//NUMERO DA 1 A 5
+function GenerateRandom5() {
+    let num = Math.floor(Math.random()* 5 + 1);
+    return num;
+}
+
 //PARI O DISPARI
 function OddOrEven(num) {
     if (num % 2 == 0) {
