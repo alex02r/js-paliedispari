@@ -45,6 +45,17 @@ function CheckPalindroma(word) {
 }
 
 
+//PARI O DISPARI
+function OddOrEven(num) {
+    if (num % 2 == 0) {
+        //Allora il numero è pari 
+        return true;
+    }
+
+    //il numero è dispari perchè non è uscito dalla funzione dopo il controllo dell'if
+    return false;
+}
+
 
 //applicazione della funzione CheckPalindroma(word);
 let parola = prompt('Inserisci una parola e ti dirò se è palindroma: ');
