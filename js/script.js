@@ -9,6 +9,27 @@
 
 */
 
+/* 
+    SOLUZIONE PARI O DISPARI
+    1 - l'utente sceglie pari o dispari.
+    2 - L'utente sceglie un numero da 1 a 5.
+    3 - funzione che genera un numero da 1 a 5 (per il computer)
+        3.A - funtion GenerateRandom5()
+            3.A.1 - inizializziamo una variabile e gli asseggnamo la funzione che genera un numero da 1 a 5
+            3.A.2 - return variabile inizializzata prima
+    4 - sommiamo i due numeri
+    5 - funzione che stabilisce se il numero è pari o dispari.
+        5.A - funtion OddOrEven(add)
+            5.A.1 ? add % 2 == 0
+                5.A.1 il numero è pari return true;
+
+            5.A.2 return false;
+    6 - dichiariamo chi ha vinto. 
+                
+*/
+
+
+
 //PALINDROMA
 function CheckPalindroma(word) {
     //assegnamo alla variabile word_reverse la parola inversa
