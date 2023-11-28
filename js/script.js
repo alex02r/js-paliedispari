@@ -81,10 +81,10 @@ let num_user = parseInt(prompt('Inserisci un numero da 1 a 5'));
 
 let num_cpu = GenerateRandom5();
 console.log('Tuo numero: ',num_user);
-console.log('Numero pc: ',num_user);
+console.log('Numero pc: ',num_cpu);
 
 let somma = num_user + num_cpu;
-console.log('La somma : ',num_user);
+console.log('La somma : ',somma);
 switch (choise) {
     case "pari":
         if(OddOrEven(somma)){
