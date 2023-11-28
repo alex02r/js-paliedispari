@@ -80,3 +80,33 @@ let choise = prompt('Scegli pari o dispari');
 let num_user = parseInt(prompt('Inserisci un numero da 1 a 5'));
 
 let num_cpu = GenerateRandom5();
+console.log('Tuo numero: ',num_user);
+console.log('Numero pc: ',num_user);
+
+let somma = num_user + num_cpu;
+console.log('La somma : ',num_user);
+switch (choise) {
+    case "pari":
+        if(OddOrEven(somma)){
+            //se è true significa che è pari
+            console.log('WIN!!!!!');
+        }else{
+            //è false quindi è dispari
+            console.log('Riprova, ha perso...');
+        }
+        break;
+
+    case "dispari":
+        if(!OddOrEven(somma)){
+            //se è true significa che è pari
+            console.log('WIN!!!!!');
+        }else{
+            //è false quindi è dispari
+            console.log('Riprova, ha perso...');
+        }
+        break;
+
+    default:
+        console.log('HAi inserito un valore sbagliato, inserisci pari o dispari');
+        break;
+}
