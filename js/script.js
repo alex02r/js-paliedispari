@@ -13,11 +13,25 @@
 function CheckPalindroma(word) {
     //assegnamo alla variabile word_reverse la parola inversa
     let word_reverse = word.split('').reverse().join();
-
+    //facciamo lo split anche di word in modo tale che risoluano le stesse.
+    word = word.split('').join();
     if (word == word_reverse) {
         //Allora laparola inserita è uguale alla parola invertita (ossia è palindroma)
         return true;
     }
     //se non entra nell'if significa che non è palindroma 
     return false;
+}
+
+
+
+//applicazione della funzione CheckPalindroma(word);
+let parola = prompt('Inserisci una parola e ti dirò se è palindroma: ');
+
+if (CheckPalindroma(parola)) {
+    //siamo quì perchè la parola è palindroma
+    console.log('La parola che hai inserito è palindroma.');
+} else {
+    //siamo quì perchè la parola NON è palndroma
+    console.log('La parola che hai inserito NON è palindroma.');
 }
