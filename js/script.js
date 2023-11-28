@@ -73,3 +73,10 @@ if (CheckPalindroma(parola)) {
     //siamo quì perchè la parola NON è palndroma
     console.log('La parola che hai inserito NON è palindroma.');
 }
+
+//pali  doispari
+
+let choise = prompt('Scegli pari o dispari');
+let num_user = parseInt(prompt('Inserisci un numero da 1 a 5'));
+
+let num_cpu = GenerateRandom5();
