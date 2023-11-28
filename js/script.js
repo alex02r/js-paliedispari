@@ -8,3 +8,16 @@
         6 - return false (possiamo mettere il return anche fuori dall if, perchè se entra trova il primo return ed esce.)
 
 */
+
+//PALINDROMA
+function CheckPalindroma(word) {
+    //assegnamo alla variabile word_reverse la parola inversa
+    let word_reverse = word.split('').reverse().join();
+
+    if (word == word_reverse) {
+        //Allora laparola inserita è uguale alla parola invertita (ossia è palindroma)
+        return true;
+    }
+    //se non entra nell'if significa che non è palindroma 
+    return false;
+}
